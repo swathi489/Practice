@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design </title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Responsive Web Design Example</h1>
+        <p>This is a simple example of a responsive web design layout that adapts to different screen sizes using media
+            queries and viewport settings.</p>
+        <img src="download.jpeg" alt="Image">
+    </div>
+    <h1>The template Element</h1>
+
+    <p>Click the button below to display the hidden content from the template element.</p>
+
+    <button onclick="showContent()">Show hidden content</button>
+<!-- Template element -->
+    <template>
+        <h2>Flower</h2>
+        <img src="download.jpeg" width="214" height="204">
+    </template>
+
+    <script>
+        function showContent() {
+            let temp = document.getElementsByTagName("template")[0];
+            let clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);
+        }
+    </script>
+
+
+
+</body>
+
+</html>
