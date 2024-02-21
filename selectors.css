@@ -1,0 +1,72 @@
+/* Styles the first paragraph element */
+p:nth-child(odd) {
+    color: blue;
+}
+
+/* Styles every even table row */
+tr:nth-child(odd) {
+    color: #c54444;
+}
+
+/* Adds content before every paragraph */
+p::before {
+    content: "== ";
+}
+
+/* Styles the first letter of each paragraph */
+p::first-letter {
+    font-size: x-small;
+}
+
+td::first-letter {
+    font-size: small;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ac1f1f;
+    border: 1px solid #111010;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    grid-row: span 2;
+    grid-template-columns: auto;
+    grid-area: auto;
+}
+
+.flex-container {
+    display: flex;
+    /* Use flexbox */
+}
+
+/* Styles for disabled buttons */
+[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Styles for inputs with a placeholder */
+[placeholder] {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* Styles for links with a specific target */
+a[target="_blank"] {
+    color: blue;
+}
+
+.container p {
+    color: blue;
+}
+
+/* Child selector example */
+.container.child {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+}
