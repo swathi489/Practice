@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Semantics(newspaper)</title>
+    <style>
+        /* #container {
+            display: flex;
+            width: 100%;
+        }
+
+        .main {
+            flex: 1;
+            text-align: justify;
+        }
+
+        .sidebar {
+            width: 200px;
+            margin-left: auto;
+        }
+
+        header,
+        nav,
+        footer {
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+    </style> */
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Times of India</h1>
+        <nav>
+            <a href="Sports">Sports</a>|
+            <a href="Business">Business</a> |
+            <a href="https://www.youtube.com/">Entertainment</a>|
+            <a href="World">International News</a>|
+            <a href="India">Domestic News</a>
+        </nav>
+    </header>
+    <section>
+        <div id="container">
+            <div class="main">
+                <h1>Delhi riots: Court convicts man, gives benefit of doubt to father</h1>
+                <p>In a significant development related to the Delhi riots case, a court has delivered its verdict,
+                    convicting a man while
+                    extending the benefit of doubt to his father. The trial, marked by intense scrutiny, highlighted
+                    the
+                    complexities of the
+                    legal proceedings surrounding the tragic events. The convicted individual's involvement in the
+                    riots
+                    was carefully
+                    examined, leading to the court's decision. However, his father's role remained unclear,
+                    prompting
+                    the court to err on
+                    the side of caution. This verdict underscores the challenges in ascertaining culpability amidst
+                    a
+                    volatile and chaotic
+                    situation. The legal process, though imperfect, seeks to deliver justice while safeguarding
+                    against
+                    wrongful
+                    convictions. The case serves as a sobering reminder of the deep-rooted issues that precipitated
+                    the
+                    unrest and the long
+                    road ahead in fostering reconciliation and healing within the community.</p>
+                <figure>
+                    <img src="delhi.jpg" width="400" height="300" alt="Delhi Riot" />
+                    <figcaption>Fig 1: A picture from Delhi's recent riots.</figcaption>
+                </figure>
+                <figure>
+                    <img src="download.jpeg" width="400" height="300" alt="Second Image" />
+                    <figcaption>Fig 2: Another image.</figcaption>
+                </figure>
+            </div>
+            <aside class="sidebar">
+                <p><i>In a surprising turn of events in the movie world, a highly anticipated blockbuster sequel has
+                        been
+                        announced, sending
+                        waves of excitement through fans worldwide. Speculation has been rampant regarding the
+                        casting
+                        choices and plot details,
+                        fueling anticipation for what promises to be an epic cinematic experience. Industry insiders
+                        suggest
+                        that this sequel
+                        could break box office records and redefine the genre for years to come. Additionally,
+                        rumors swirl
+                        about a beloved
+                        classic receiving the remake treatment, with a star-studded cast rumored to be attached to
+                        the
+                        project. Amidst the buzz,
+                        award season chatter continues to intensify, with frontrunners emerging as favorites to
+                        sweep top
+                        honors at prestigious
+                        ceremonies. Furthermore, a renowned director's latest project has been shrouded in secrecy,
+                        leaving
+                        audiences eager for
+                        any tidbits of information regarding the mysterious film. As anticipation builds, movie
+                        enthusiasts
+                        brace themselves for
+                        a year filled with cinematic delights and surprises.</i></p>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        &copy;2021 Movie Review Website. All rights reserved.<br>
+        <a href="mailto:swathirani489@gmail.com">swathirani489@gmail.com</a>
+    </footer>
+</body>
+<form>
+    <input type="text" name="search" placeholder="Search...">
+    <input type="submit" value="Search">
+
+</form>
+
+
+<video width="200" height="100" controls>
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support the video element.
+</video>
+<button onclick="toggleplayPause()">Play/Pause </button>
+
+<script>
+    var video = document.getElementById("movie");
+
+    function togglePlayPause() {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+</script>
+
+</html>
