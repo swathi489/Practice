@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple List</title>
+    <style>
+        .card {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #28157ee0;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>TO-DO LIST
+    </h1>
+    </center>
+    <div class="card">
+        <input id="input">
+        <button onclick="add()">Add</button>
+        <ul id="list-container">
+            <li>HI EVERYONE
+                <button onclick="deleteItem(event)">Delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var ul = document.getElementById('list-container');
+        var input = document.getElementById("input");
+
+        function add() {
+            var listItem = document.createElement("li");
+            listItem.innerHTML = input.value + "<button onclick='deleteItem(event)'>Delete</button>";
+            ul.appendChild(listItem);
+        }
+
+        function deleteItem(event) {
+            event.target.parentElement.remove();
+        }
+    </script>
+</body>
+
+</html>
